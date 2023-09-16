@@ -1,0 +1,10 @@
+console.log('让我出，回来吧郭皓，喜欢郭浩的老玩家点亮小红心，评论231！');
+console.log('回来吧我的郭皓');
+console.log('我最骄傲的信仰');
+console.log('历历在目的爆红');
+console.log('眼泪莫名在流淌');
+console.log('依稀记得的自毁');
+console.log('还有给力的外纪');
+console.log('把宋正如都打爆');
+console.log('就算被查也不累');
+console.log('郭皓大神保佑我的代码不会出现bug');
