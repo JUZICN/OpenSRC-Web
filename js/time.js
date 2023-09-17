@@ -28,7 +28,7 @@ function setTime() {
     var create_time = Math.round(new Date(Date.UTC(2010, 04, 14, 0, 0, 0)).getTime() / 1000);
     var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
     currentTime = secondToDate((timestamp - create_time));
-    currentTimeHtml = currentTime[0] + '年 ' + currentTime[1] + '天 ' + currentTime[2] + '时 ' + currentTime[3] + '分 ' + currentTime[4] + '秒 ';
+    currentTimeHtml = currentTime[0] + 'Years' + currentTime[1] + 'Days' + currentTime[2] + 'Hours' + currentTime[3] + 'Minutes' + currentTime[4] + 'Seconds';
     document.getElementById("htmer_time").innerHTML = currentTimeHtml;
 }
 setInterval(setTime, 1000);
