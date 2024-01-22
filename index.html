@@ -1,41 +1,83 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html>
+<html lang="zh_cn">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <title>Juzi's Web</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>Juzi's Web</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 </head>
 <body>
+<canvas></canvas>
+<!-- 天气区-开始-->
+<div id="tp-weather-widget"></div>
+<!-- 天气区-结束-->
 <!-- js引用区-开始 -->
+    <script src="js/copyright.js"></script>
+    <script src="js/fenjiexian.js"></script>
     <script src="js/nobugs2.0.js"></script>
     <script src="js/time.js"></script>
+    <script src="js/runtime.js"></script>
+    <script src="js/servertime.js"></script>
+    <script src="js/baidu.js"></script> 
+    <script src="js/star.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/fenjiexian.js"></script>
+    <script src="js/changelog.js"></script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <!-- js引用区-结束 -->
+    <!-- CSS引用区 -->
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/star.css"/>
+    <link rel="stylesheet" href="css/font.css">
+    <!-- CSS引用区-结束 -->
     <!-- 代码区-开始 -->
-    <h1>欢迎来到<a href="https://ijuzi.net" target="_blank">Juzi的网站</a></h1>
-    <h2>Welcome to<a href="https://ijuzi.net" target="_blank">Juzi's Web</a></h2>
-    <h3>今日天气</h3>
-    <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tc&skin=pitaya" frameborder="0"
-        width="350" height="24" allowtransparency="true"></iframe>
-    <br />
+    <maincode>
+    <div style="font-family:mc, uni;">
+    <h1>欢迎来到<a href="https://ju-zi.org" target="_blank">Juzi的网站</a></h1>
+    <h2>Welcome to<a href="https://ju-zi.org" target="_blank">Juzi's Web</a></h2>
     <h3>About Me</h3>
-    <p>Juzi已经在地球上存在了:<span id="htmer_time"></span></p>
+    <p>Juzi已经存在了<span id="htmer_time"></span></p>
     <h3>Contact Me</h3>
-    <a href="mailto:3287936006@qq.com">E-MAIL</a>
+    <a href="mailto:3287936006@qq.com">QQ-MAIL</a>
+    <a href="mailto:i@ju-zi.org">JUZI-MAIL</a>
     <h3>Links</h3>
     <a href="https://juziclub.net" target="_blank">JuziClub</a> 
+    <br>
+    <a href="https://rbwcn.cn" target="_blank">RBWCN</a> 
     <br> 
-    <a href="https://blog.ijuzi.net" target="_blank">Blog</a>
+    <a href="https://blog.ju-zi.org" target="_blank">Blog</a>
     <br>
-    <a href="https://forum.ijuzi.net" target="_blank">Forum</a>
+    <a href="https://forum.ju-zi.org" target="_blank">Forum</a>
     <br>
-    <a href="https://search.ijuzi.net" target="_blank">Start Menu</a>
+    <a href="https://search.ju-zi.org" target="_blank">Start Menu</a>
     <br>
-    <a href="https://kook.ijuzi.net" target="_blank">Kook</a>
+    <a href="https://mail.ju-zi.org" target="_blank">E-MAIL</a>
     <br>
-    <a href="https://discord.ijuzi.net">Discord</a>
+    <a href="https://kook.ju-zi.org" target="_blank">Kook</a>
+    <br>
+    <a href="https://discord.ju-zi.org" target="_blank">Discord</a>
+    <br>
+    <a href="https://ct.ju-zi.org" target="_blank">Christmas Tree</a>
+    <br>
+    <a href="https://ju-zi.org/404.html" target="_blank">404 Page</a>
+    <h3>Server Info</h3>
+    <p>System:CentOS7.6</p>
+    <p>服务器已运行<span id="servertime"></span></p>
+    </div>
+    </maincode>
+    <footer>
+    <div style="font-family:mc, uni;">
+    <p>网站已运行<span id="WebTime"></span></p>
+    <p><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></p>
+    <p>&copy; 2023-2024<a href="https://ju-zi.org" target="_blank">Juzi</a></p>
+    </div>
+    </footer>
     <!-- 代码区-结束 -->
 </body>
 </html>
     <!-- 版权声明区 -->
     <!-- 本站由Juzi_CN(3287936006)编写 -->
-    <!-- 本站遵循MIT开源协议 源码已经上传至github -->
+    <!-- 本站遵循GPL3.0开源协议 源码已经上传至Github -->
     <!-- 开源地址https://github.com/JUZICN/OpenSRC-Web -->
